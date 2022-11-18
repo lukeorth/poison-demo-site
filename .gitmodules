@@ -1,0 +1,3 @@
+[submodule "demo/themes/hydes-poison"]
+	path = demo/themes/hydes-poison
+	url = git@github.com:LukeOrth/hydes-poison.git
