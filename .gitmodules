@@ -2,5 +2,5 @@
 	path = demo/themes/hydes-poison
 	url = git@github.com:LukeOrth/hydes-poison.git
 [submodule "themes/poison"]
-	path = themes/poison
+	path = demo/themes/poison
 	url = git@github.com:LukeOrth/poison.git
