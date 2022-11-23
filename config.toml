@@ -1,12 +1,12 @@
-baseURL = 'https://hydes-poison.netlify.app/'
+baseURL = 'https://poison-theme.netlify.app/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "hydes-poison"
+title = "Poison"
+theme = "poison"
 paginate = 2
 pluralizelisttitles = false
 
 [params]
-    brand = "Hyde's Poison"
+    brand = "Poison"
     brand_image = "/images/brand_image.jpg"
     dark_mode = true
 
