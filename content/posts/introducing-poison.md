@@ -2,28 +2,26 @@
 title: "Introducing Poison"
 date: 2022-11-23T13:43:53-06:00
 draft: false
+categories: ["test"]
+tags: ["test"]
 ---
 
-Poison is a clean, professional theme designed to concentrate your ideas and captivate your audience.
-
-___
-*Words kill, words give life; they’re either **poison** or fruit—you choose.*
-
-*--- Proverbs 18:21*
-___
+Poison is a clean, professional Hugo theme designed to stun and captivate your audience.
 
 <!--more-->
 
-I use this theme on my personal site at https://lukeorth.com---so if you'd like to see Poison in action, head over there.
+I use this theme on my personal site at https://lukeorth.com, so check it out if you’d like to see Poison in action.
 
 ## Features
 
 In addition to the normal features you get with Hugo (standard Built-in templates, shortcodes, etc.), Poison offers some unique features of its own.
 
-- **Light & dark mode** -- Gives readers the choice to read in light or dark mode.  Light mode is the default, but you can modify this in your config file.
-- **Table of contents** -- Provides readers on a desktop with a floating table of contents.
-- **Series** -- Sensibly link and display content that you'd like to group into "series" (i.e. *Tutorial One*, *Tutorial Two*, etc.).  This is accomplished using a custom taxonomy, so just add `series` to the frontmatter of each piece of content you'd like to group together.
-    - eg:
+- **Light & dark mode** -- Give readers the choice to read in light or dark mode.  Light mode is the default, but you can modify this in your config file.
+- **Table of contents** -- Provide readers on a desktop with a floating table of contents.
+- **Series** -- Sensibly link and display content that you'd like to group into "series" (i.e. *Tutorial One*, *Tutorial Two*, etc.).  
+   
+   This is accomplished using a custom taxonomy, so just add `series` to the frontmatter on each piece of content you'd like to group together.
+
     {{< highlight yaml >}}
     ---
     title: "Example to demonstrate how to use series"
@@ -34,22 +32,44 @@ In addition to the normal features you get with Hugo (standard Built-in template
     ---
     {{</highlight >}}
 
-- **KaTeX** -- Helpful if you intend to use mathematical notations.  For block math, use `$$ ... $$`.  For inline math, use `$ ... $`.
-- **Tabs** -- For content that's better viewed using tabs (such as different snippets of computer code), you can create them with the custom shortcodes.
-    - eg:
-    {{< highlight text >}}
-    {{</* tabs tabTotal="3" */>}}
+- **KaTeX** -- Helpful if you intend to use mathematical notations.  
 
-    {{</* tab tabName="First Tab" */>}}
-    This is the content in the first tab.
-    {{</* /tab */>}}
+    For block math notations that appear on their own line, use `$$ ... $$`
+    
+    $$ 5 \times 5 = 25 $$
+
+    For inline math notations that appear on the same line, use `$ ... $`
+    
+- **Tabs** -- For content that's better viewed using tabs (such as different snippets of computer code), you can create them with the custom shortcodes.
+    {{< highlight text >}}
+    {{</* tabs tabTotal="2" */>}}
+
+    {{%/* tab tabName="First Tab" */%}}
+    This is markdown content.
+    {{%/* /tab */%}}
 
     {{</* tab tabName="Second Tab" */>}}
-    This is the content in the second tab.
+    {{</* highlight text */>}}
+    This is a code block.
+    {{</* highlight */>}}
     {{</* /tab */>}}
 
     {{</* /tabs */>}}
-    {{</highlight >}}
+    {{</ highlight >}}
+    
+    {{< tabs tabTotal="2" >}}
+
+    {{% tab tabName="First Tab" %}}
+This is **markdown** content.
+    {{% /tab %}}
+
+    {{< tab tabName="Second Tab" >}}
+    {{< highlight text >}}
+    This is a code block.
+    {{</ highlight >}}
+    {{< /tab >}}
+
+    {{< /tabs >}}
 
 
 ## Installation
@@ -60,7 +80,7 @@ To install Poison as your theme, first clone this repository into your `themes` 
 git clone https://github.com/LukeOrth/poison.git themes/poison --depth=1
 {{</highlight >}}
 
-Next, specify `poison` as your default theme in the config.toml file by adding the following line:
+Next, specify `poison` as the default theme in your config.toml file by adding the following line:
 
 {{< highlight text >}}
 theme = "poison"
@@ -74,13 +94,15 @@ cd themes/poison
 git pull
 {{</highlight >}}
 
-For more information, read the official [quick start guide](https://gohugo.io/getting-started/quick-start/).
+For more information on how to get started with Hugo and themes, read the official [quick start guide](https://gohugo.io/getting-started/quick-start/).
 
 ## How to Configure
 
-After successfully installing the theme, the only remaining task is to configure it.  Poison has a lot of configuration options, so it's best to start by copying and pasting the following into your config.toml file.
+After successfully installing Poison, the last step is to configure it.
 
-Edit to your heart's content.
+The best way to start is by copying/pasting the following into your config.toml file.  Once you see how it looks, tinker with the settings as needed.
+
+**NOTE**: You'll want to change the `brand_image` path below for things to work properly.  The path is relative to the `static` directory.  If you don't have an image, just comment this line out.
 
 {{< highlight toml >}}
 baseURL = "/"
