@@ -6,7 +6,7 @@ categories: ["test"]
 tags: ["test"]
 ---
 
-Poison is a clean, professional Hugo theme designed to stun and captivate your audience.
+Poison is a clean, professional Hugo theme designed to captivate your readers.
 
 <!--more-->
 
