@@ -10,15 +10,15 @@ Poison is a clean, professional Hugo theme designed to captivate your readers.
 
 <!--more-->
 
-I use this theme on my personal site at https://lukeorth.com, so check it out if you’d like to see Poison in action.
+I use this theme on my personal site at https://lukeorth.com, so check it out to see Poison in action.
 
 ## Features
 
 In addition to the normal features you get with Hugo (standard Built-in templates, shortcodes, etc.), Poison offers some unique features of its own.
 
-- **Light & dark mode** -- Give readers the choice to read in light or dark mode.  Light mode is the default, but you can modify this in your config file.
+- **Light & dark mode** -- Give readers the choice to read in either light or dark mode.  Light mode is the default when visitors first visit your site, but you can change this in your config file.
 - **Table of contents** -- Provide readers on a desktop with a floating table of contents.
-- **Series** -- Sensibly link and display content that you'd like to group into "series" (i.e. *Tutorial One*, *Tutorial Two*, etc.).  
+- **Series** -- Sensibly link and display content that can be grouped into "series" (i.e. *Tutorial One*, *Tutorial Two*, etc.).  
    
    This is accomplished using a custom taxonomy, so just add `series` to the frontmatter on each piece of content you'd like to group together.
 
@@ -100,9 +100,9 @@ For more information on how to get started with Hugo and themes, read the offici
 
 After successfully installing Poison, the last step is to configure it.
 
-The best way to start is by copying/pasting the following into your config.toml file.  Once you see how it looks, tinker with the settings as needed.
+The best way to start is by copying/pasting the following code into your config.toml file.  Once you see how it looks, play with the settings as needed.
 
-**NOTE**: You'll want to change the `brand_image` path below for things to work properly.  The path is relative to the `static` directory.  If you don't have an image, just comment this line out.
+**NOTE**: To display an image in your sidebar, you'll need to uncomment the `brand_image` path below and have it point to your image file.  The path is relative to the `static` directory.  If you don't have an image, just leave this line commented out.
 
 {{< highlight toml >}}
 baseURL = "/"
@@ -113,7 +113,7 @@ pluralizelisttitles = false
 
 [params]
     brand = "Poison"                    # name of your site - appears in the sidebar
-    brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
+    # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
     dark_mode = true                    # optional - defaults to false
 
     # Adjust as needed to display your site's menu in the sidebar.
