@@ -51,6 +51,5 @@ pluralizelisttitles = false
     date_color_dark = "#9a9a9a"         # default is #9a9a9a
 
 [taxonomies]
-    category = 'categories'
     series = 'series'
     tags = 'tags'
