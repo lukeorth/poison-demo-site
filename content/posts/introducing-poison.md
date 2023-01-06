@@ -82,7 +82,7 @@ This is **markdown** content.
 First, clone this repository into your `themes` directory:
 
 {{< highlight text >}}
-git clone https://github.com/LukeOrth/poison.git themes/poison --depth=1
+git clone https://github.com/lukeorth/poison.git themes/poison --depth=1
 {{</highlight >}}
 
 Next, specify `poison` as the default theme in your config.toml file by adding the following line:
