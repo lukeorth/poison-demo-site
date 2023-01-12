@@ -12,7 +12,6 @@ pluralizelisttitles = false
 
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Projects", URL = "/projects/"},
         {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
 
