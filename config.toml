@@ -2,7 +2,7 @@ baseURL = 'https://poison-theme.netlify.app/'
 languageCode = 'en-us'
 title = "Poison"
 theme = "poison"
-paginate = 2
+paginate = 10
 pluralizelisttitles = false
 
 [params]

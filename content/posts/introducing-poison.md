@@ -159,7 +159,7 @@ I recommend starting by copying/pasting the following code into your config.toml
 baseURL = "/"
 languageCode = "en-us"
 theme = "poison"
-paginate = 5
+paginate = 10
 pluralizelisttitles = false
 
 [params]
