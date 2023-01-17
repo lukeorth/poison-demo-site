@@ -3,6 +3,7 @@ title: "Introducing Poison"
 date: 2022-11-23T13:43:53-06:00
 draft: false
 tags: ["hugo","introduction"]
+series: "How to use poison"
 ---
 
 *Poison* is a **clean**, **professional** Hugo theme designed to **captivate** your readers.
