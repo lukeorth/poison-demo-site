@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on Poison</title>
+    <link>https://poison-theme.netlify.app/categories/test/</link>
+    <description>Recent content in test on Poison</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Nov 2022 13:43:53 -0600</lastBuildDate><atom:link href="https://poison-theme.netlify.app/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Poison</title>
+      <link>https://poison-theme.netlify.app/posts/introducing-poison/</link>
+      <pubDate>Wed, 23 Nov 2022 13:43:53 -0600</pubDate>
+      
+      <guid>https://poison-theme.netlify.app/posts/introducing-poison/</guid>
+      <description>&lt;p&gt;Poison is a clean, professional Hugo theme designed to captivate your readers.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

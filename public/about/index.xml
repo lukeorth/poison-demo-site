@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Poison</title>
+    <link>https://poison-theme.netlify.app/about/</link>
+    <description>Recent content in About on Poison</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Nov 2022 15:04:46 -0600</lastBuildDate><atom:link href="https://poison-theme.netlify.app/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://poison-theme.netlify.app/about/about/</link>
+      <pubDate>Wed, 30 Nov 2022 15:04:46 -0600</pubDate>
+      
+      <guid>https://poison-theme.netlify.app/about/about/</guid>
+      <description>Words kill, words give life; they’re either poison or fruit—you choose.
+&amp;mdash; Proverbs 18:21
+Poison is a clean, professional Hugo theme designed to captivate your readers.
+It&amp;rsquo;s also tiny and privacy conscious with no external dependencies. That&amp;rsquo;s right&amp;mdash;no JavaScript frameworks, icon packs, or Google fonts. No ads or trackers polluting your console window (try it out and take a look). We kept things simple. A little vanilla JavaScript, a dash of CSS, and the power of Hugo.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://poison-theme.netlify.app/about/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>https://poison-theme.netlify.app/about/about/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>https://poison-theme.netlify.app/</loc>
+    <lastmod>2022-11-30T15:04:46-06:00</lastmod>
+  </url><url>
+    <loc>https://poison-theme.netlify.app/series/how-to-use-poison/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>https://poison-theme.netlify.app/tags/hugo/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>https://poison-theme.netlify.app/posts/introducing-poison/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>https://poison-theme.netlify.app/tags/introduction/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>https://poison-theme.netlify.app/posts/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>https://poison-theme.netlify.app/series/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url><url>
+    <loc>https://poison-theme.netlify.app/tags/</loc>
+    <lastmod>2022-11-23T13:43:53-06:00</lastmod>
+  </url>
+</urlset>
