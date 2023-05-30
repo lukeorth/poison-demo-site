@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Poison</title>
-    <link>https://poison-theme.netlify.app/about/</link>
+    <link>https://poison.lukeorth.com/about/</link>
     <description>Recent content in About on Poison</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Nov 2022 15:04:46 -0600</lastBuildDate><atom:link href="https://poison-theme.netlify.app/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Nov 2022 15:04:46 -0600</lastBuildDate><atom:link href="https://poison.lukeorth.com/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://poison-theme.netlify.app/about/about/</link>
+      <link>https://poison.lukeorth.com/about/about/</link>
       <pubDate>Wed, 30 Nov 2022 15:04:46 -0600</pubDate>
       
-      <guid>https://poison-theme.netlify.app/about/about/</guid>
+      <guid>https://poison.lukeorth.com/about/about/</guid>
       <description>Words kill, words give life; they’re either poison or fruit—you choose.
 &amp;mdash; Proverbs 18:21
 Poison is a clean, professional Hugo theme designed to captivate your readers.
