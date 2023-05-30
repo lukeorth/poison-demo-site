@@ -1,4 +1,4 @@
-baseURL = 'https://poison-theme.netlify.app/'
+baseURL = 'https://poison.lukeorth.com/'
 languageCode = 'en-us'
 title = "Poison"
 theme = "poison"
