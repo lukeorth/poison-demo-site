@@ -120,7 +120,7 @@
     },
     "datePublished": "2022-11-23",
     "description": "",
-    "wordCount":  1209 ,
+    "wordCount":  1545 ,
     "mainEntityOfPage": "True",
     "dateModified": "2022-11-23",
     "image": {
@@ -405,20 +405,16 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </div>
 
   <p><em>Poison</em> is a <strong>clean</strong>, <strong>professional</strong> Hugo theme designed to <strong>captivate</strong> your readers.</p>
-<p>It&rsquo;s also <strong>tiny</strong> and <strong>privacy conscious</strong> with <em>no external dependencies</em>.  That&rsquo;s right&mdash;no JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window (try it out and take a look).  <strong>We kept things simple</strong>.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.</p>
-<p>All of the static assets for the site (JS files, CSS, and fonts) are located within the theme&rsquo;s <em>/static/</em> directory.  <strong>That way you know <em>exactly</em> what&rsquo;s going on your site</strong>.</p>
+<p>It&rsquo;s also <strong>tiny</strong> and <strong>privacy conscious</strong> with <em>no external dependencies</em>.  That&rsquo;s right&mdash;no JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  <strong>We kept things simple</strong>.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.</p>
 <h2 id="features">Features</h2>
 <p>In addition to the standard Built-in templates and shortcodes that come with Hugo, <em>Poison</em> offers some unique features of its own.</p>
-<ul>
-<li>
-<p><strong>Light &amp; dark mode</strong> &ndash; Give readers the choice to read in light or dark mode.  The user&rsquo;s preference is stored in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.</p>
-</li>
-<li>
-<p><strong>Table of contents</strong> &ndash; Provide a floating table of contents for readers with large enough screens (i.e. <em>screen-width &gt; 1600 pixels</em>).</p>
-</li>
-<li>
-<p><strong>Series</strong> &ndash; Sensibly link and display content into &ldquo;series&rdquo; (i.e. <em>Tutorial One</em>, <em>Tutorial Two</em>, etc.).</p>
-<p>This is done with a custom taxonomy, so just add <code>series</code> to the frontmatter on the content you&rsquo;d like to group together.</p>
+<h3 id="light--dark-mode">Light &amp; dark mode</h3>
+<p>Give readers the choice to read in light or dark mode.  The user&rsquo;s preference is stored in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.</p>
+<h3 id="table-of-contents">Table of contents</h3>
+<p>Provide a floating table of contents for readers with large enough screens (i.e. <em>screen-width &gt; 1600 pixels</em>).</p>
+<h3 id="series">Series</h3>
+<p>Sensibly link and display content in &ldquo;series&rdquo; (i.e. <em>Tutorial One</em>, <em>Tutorial Two</em>, etc.).</p>
+<p>This is done with a custom taxonomy. Just add <code>series</code> to the frontmatter on any content you want to group together.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Example to demonstrate how to use series&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2022-10-04</span>
@@ -426,15 +422,13 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span><span style="display:flex;"><span><span style="color:#f92672">series</span>: <span style="color:#e6db74">&#34;How to use poison&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">tags</span>: [<span style="color:#e6db74">&#34;Hugo&#34;</span>]
 </span></span><span style="display:flex;"><span>---</span></span></code></pre></div>
-</li>
-<li>
-<p><strong>KaTeX</strong> &ndash; Make your mathematical notations pop.</p>
+<h3 id="katex">KaTeX</h3>
+<p>Make your mathematical notations pop.</p>
 <p>For notations that should appear on their own line, use the block quotes <code>$$ ... $$</code></p>
 <p>$$ 5 \times 5 = 25 $$</p>
 <p>For notations that should appear on the same line, use the inline quotes <code>$ ... $</code></p>
-</li>
-<li>
-<p><strong>Tabs</strong> &ndash; Some content is just better viewed in tabs.  Luckily we have a shortcode for that.
+<h3 id="tabs">Tabs</h3>
+<p>Some content is just better viewed in tabs.  There&rsquo;s a shortcode for that.</p>
 
 
 
@@ -446,7 +440,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 	    
         
             
-            <button class="tab active" id="aedbfc">
+            <button class="tab active" id="abefdc">
             
 
                 First Tab
@@ -455,7 +449,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 	    
         
             
-            <button class="tab" id="bdafec">
+            <button class="tab" id="fcadbe">
             
 
                 Second Tab
@@ -468,7 +462,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
     
         
-            <div class="tabcontent aedbfc" style="display:block;">
+            <div class="tabcontent abefdc" style="display:block;">
         
 
         <p>This is <strong>markdown</strong> content.</p>
@@ -479,18 +473,18 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
     
         
-            <div class="tabcontent bdafec">
+            <div class="tabcontent fcadbe">
         
 
         
-    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>This is a code block.</span></span></code></pre></div>
-    
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>This is a code block.</span></span></code></pre></div>
+
         
         
     </div>
     
 </div>
-</p>
+
 <hr>
 <p>Here&rsquo;s the code for the tabs above&hellip;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; tabs tabTotal=&#34;2&#34; &gt;}}
@@ -506,8 +500,64 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span><span style="display:flex;"><span>{{&lt; /tab &gt;}}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>{{&lt; /tabs &gt;}}</span></span></code></pre></div>
-</li>
-</ul>
+<h3 id="mermaid-diagrams">Mermaid diagrams</h3>
+<p>There&rsquo;s a shortcode for embedding Mermaid diagrams.</p>
+
+
+<script defer language="javascript" type="text/javascript" src="https://poison.lukeorth.com/js/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true });</script>
+
+
+
+<div class="mermaid">
+sequenceDiagram
+participant Alice
+participant Bob
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts <br>prevail!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+
+</div>
+<p>Here&rsquo;s the code for the diagram above:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>{{&lt; mermaid &gt;}}
+</span></span><span style="display:flex;"><span>sequenceDiagram
+</span></span><span style="display:flex;"><span>participant Alice
+</span></span><span style="display:flex;"><span>participant Bob
+</span></span><span style="display:flex;"><span>Alice-&gt;&gt;John: Hello John, how are you?
+</span></span><span style="display:flex;"><span>loop Healthcheck
+</span></span><span style="display:flex;"><span>    John-&gt;&gt;John: Fight against hypochondria
+</span></span><span style="display:flex;"><span>end
+</span></span><span style="display:flex;"><span>Note right of John: Rational thoughts &lt;br&gt;prevail!
+</span></span><span style="display:flex;"><span>John--&gt;&gt;Alice: Great!
+</span></span><span style="display:flex;"><span>John-&gt;&gt;Bob: How about you?
+</span></span><span style="display:flex;"><span>Bob--&gt;&gt;John: Jolly good!
+</span></span><span style="display:flex;"><span>{{&lt; /mermaid &gt;}}</span></span></code></pre></div>
+<h3 id="plantuml-diagrams">PlantUML diagrams</h3>
+<p>There&rsquo;s a shortcode for embedding PlantUML diagrams.</p>
+
+
+<script language="javascript" type="text/javascript" src="https://poison.lukeorth.com/js/plantuml-encoder.min.js"></script>
+
+<script language="javascript" type="text/javascript" src="https://poison.lukeorth.com/js/plantuml-encoder.js"></script>
+
+
+
+<span id="plantuml-foo" style="display:none">
+a -&gt; b
+b -&gt; c
+</span>
+<img class="plantuml" id="plantuml-foo">
+<p>Here&rsquo;s the code for the diagram above:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&lt;span id=&#34;plantuml-foo&#34; style=&#34;display:none&#34;&gt;
+</span></span><span style="display:flex;"><span>a -&amp;gt; b
+</span></span><span style="display:flex;"><span>b -&amp;gt; c
+</span></span><span style="display:flex;"><span>&lt;/span&gt;
+</span></span><span style="display:flex;"><span>&lt;img class=&#34;plantuml&#34; id=&#34;plantuml-foo&#34;&gt;</span></span></code></pre></div>
 <h2 id="installation">Installation</h2>
 <p>First, clone this repository into your <code>themes</code> directory:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git clone https://github.com/lukeorth/poison.git themes/poison --depth=1</span></span></code></pre></div>
@@ -566,13 +616,21 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;poison&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">10</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pluralizelisttitles</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pluralizelisttitles</span> = <span style="color:#66d9ef">false</span>   <span style="color:#75715e"># removes the automatically appended &#34;s&#34; on sidebar entries</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span> = <span style="color:#e6db74">&#34;Poison&#34;</span>                    <span style="color:#75715e"># name of your site - appears in the sidebar</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># brand_image = &#34;/images/test.jpg&#34;  # path to the image shown in the sidebar</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Update this description...&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dark_mode</span> = <span style="color:#66d9ef">true</span>                    <span style="color:#75715e"># optional - defaults to false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span> = <span style="color:#e6db74">&#34;Poison&#34;</span>                      <span style="color:#75715e"># name of your site - appears in the sidebar</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># brand_image = &#34;/images/test.jpg&#34;    # path to the image shown in the sidebar</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Update this description...&#34;</span> <span style="color:#75715e"># Used as default meta description if not specified in front matter</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dark_mode</span> = <span style="color:#66d9ef">true</span>                      <span style="color:#75715e"># optional - defaults to false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># favicon = &#34;favicon.png&#34;             # path to favicon (defaults to favicon.png)</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># NOTE: The following three params are optional and are used to create meta tags + enhance SEO.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># og_image = &#34;&#34;                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url</span>
+</span></span><span style="display:flex;"><span>                                          <span style="color:#75715e"># this is also used in the schema output as well. Image is resized to max 1200x630</span>
+</span></span><span style="display:flex;"><span>                                          <span style="color:#75715e"># For this to work though og_image and brand_url must be a path inside the assets directory</span>
+</span></span><span style="display:flex;"><span>                                          <span style="color:#75715e"># e.g. /assets/images/site/og-image.png becomes images/site/og-image.png</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># publisher_icon = &#34;&#34;                 # path to publisher icon - defaults to favicon, used in schema</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># MENU PLACEHOLDER</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Menu dict keys:</span>
@@ -585,8 +643,9 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span><span style="display:flex;"><span>        {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;Posts&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>, <span style="color:#a6e22e">Pre</span> = <span style="color:#e6db74">&#34;Recent&#34;</span>, <span style="color:#a6e22e">HasChildren</span> = <span style="color:#66d9ef">true</span>, <span style="color:#a6e22e">Limit</span> = <span style="color:#ae81ff">5</span>},
 </span></span><span style="display:flex;"><span>    ]
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Links to your socials.  Delete any you don&#39;t need/use. </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Links to your socials.  Comment or delete any you don&#39;t need/use. </span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">github_url</span> = <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">gitlab_url</span> = <span style="color:#e6db74">&#34;https://gitlab.com&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">linkedin_url</span> = <span style="color:#e6db74">&#34;https://linkedin.com&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">twitter_url</span> = <span style="color:#e6db74">&#34;https://twitter.com&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mastodon_url</span> = <span style="color:#e6db74">&#34;https://mastodon.social&#34;</span>
@@ -595,6 +654,13 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">youtube_url</span> = <span style="color:#e6db74">&#34;https://youtube.com&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">instagram_url</span> = <span style="color:#e6db74">&#34;https://instagram.com&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">facebook_url</span> = <span style="color:#e6db74">&#34;https://facebook.com&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">email_url</span> = <span style="color:#e6db74">&#34;mailto://user@domain&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># NOTE: If you don&#39;t want to use RSS, comment or delete the following lines</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rss_icon</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Which section the RSS icon links to, defaults to all content. See https://gohugo.io/templates/rss/#section-rss</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rss_section</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Hex colors for your sidebar.</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sidebar_bg_color</span> = <span style="color:#e6db74">&#34;#202020&#34;</span>            <span style="color:#75715e"># default is #202020</span>
@@ -616,21 +682,29 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_border_color</span> = <span style="color:#e6db74">&#34;#E5E5E5&#34;</span>  <span style="color:#75715e"># default is #E5E5E5</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_stripe_color</span> = <span style="color:#e6db74">&#34;#F9F9F9&#34;</span>  <span style="color:#75715e"># default is #F9F9F9</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Hex colors for your content in dark mode</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">text_color_dark</span> = <span style="color:#e6db74">&#34;#eee&#34;</span>            <span style="color:#75715e"># default is #eee</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">content_bg_color_dark</span> = <span style="color:#e6db74">&#34;#121212&#34;</span>   <span style="color:#75715e"># default is #121212</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post_title_color_dark</span> = <span style="color:#e6db74">&#34;#DBE2E9&#34;</span>   <span style="color:#75715e"># default is #DBE2E9</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">list_color_dark</span> = <span style="color:#e6db74">&#34;#9d9d9d&#34;</span>         <span style="color:#75715e"># default is #9d9d9d</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">link_color_dark</span> = <span style="color:#e6db74">&#34;#268bd2&#34;</span>         <span style="color:#75715e"># default is #268bd2</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">date_color_dark</span> = <span style="color:#e6db74">&#34;#9a9a9a&#34;</span>         <span style="color:#75715e"># default is #9a9a9a</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_border_color_dark</span> = <span style="color:#e6db74">&#34;#515151&#34;</span> <span style="color:#75715e"># default is #515151</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_stripe_color_dark</span> = <span style="color:#e6db74">&#34;#202020&#34;</span> <span style="color:#75715e"># default is #202020</span>
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">text_color_dark</span> = <span style="color:#e6db74">&#34;#eee&#34;</span>                <span style="color:#75715e"># default is #eee</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">content_bg_color_dark</span> = <span style="color:#e6db74">&#34;#121212&#34;</span>       <span style="color:#75715e"># default is #121212</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post_title_color_dark</span> = <span style="color:#e6db74">&#34;#DBE2E9&#34;</span>       <span style="color:#75715e"># default is #DBE2E9</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">list_color_dark</span> = <span style="color:#e6db74">&#34;#9d9d9d&#34;</span>             <span style="color:#75715e"># default is #9d9d9d</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">link_color_dark</span> = <span style="color:#e6db74">&#34;#268bd2&#34;</span>             <span style="color:#75715e"># default is #268bd2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">date_color_dark</span> = <span style="color:#e6db74">&#34;#9a9a9a&#34;</span>             <span style="color:#75715e"># default is #9a9a9a</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_border_color_dark</span> = <span style="color:#e6db74">&#34;#515151&#34;</span>     <span style="color:#75715e"># default is #515151</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">table_stripe_color_dark</span> = <span style="color:#e6db74">&#34;#202020&#34;</span>     <span style="color:#75715e"># default is #202020</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_color</span> = <span style="color:#e6db74">&#34;#bf616a&#34;</span>                  <span style="color:#75715e"># default is #bf616a</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_background_color</span> = <span style="color:#e6db74">&#34;#E5E5E5&#34;</span>       <span style="color:#75715e"># default is #E5E5E5</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_color_dark</span> = <span style="color:#e6db74">&#34;#ff7f7f&#34;</span>             <span style="color:#75715e"># default is #ff7f7f</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">code_background_color_dark</span> = <span style="color:#e6db74">&#34;#393D47&#34;</span>  <span style="color:#75715e"># default is #393D47</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">taxonomies</span>]
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">series</span> = <span style="color:#e6db74">&#39;series&#39;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tags</span> = <span style="color:#e6db74">&#39;tags&#39;</span></span></span></code></pre></div>
+<h2 id="custom-css">Custom CSS</h2>
+<p>You can override any setting in Poison&rsquo;s static CSS files by adding your own <code>/static/css/custom.css</code> file. For example, if you want to override the title font and font size, you could add this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>.<span style="color:#a6e22e">sidebar-about</span> <span style="color:#a6e22e">h1</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-size</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#ae81ff">1.4</span><span style="color:#a6e22e">em</span><span style="color:#960050;background-color:#1e0010">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-family</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;Monaco&#34;</span>, <span style="color:#a6e22e">monospace</span><span style="color:#960050;background-color:#1e0010">;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
   <hr>
 <div class="footer">
     
@@ -664,7 +738,17 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
       <h4 id="contents"></h4>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#features">Features</a></li>
+    <li><a href="#features">Features</a>
+      <ul>
+        <li><a href="#light--dark-mode">Light &amp; dark mode</a></li>
+        <li><a href="#table-of-contents">Table of contents</a></li>
+        <li><a href="#series">Series</a></li>
+        <li><a href="#katex">KaTeX</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#mermaid-diagrams">Mermaid diagrams</a></li>
+        <li><a href="#plantuml-diagrams">PlantUML diagrams</a></li>
+      </ul>
+    </li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#how-to-configure">How to Configure</a>
       <ul>
@@ -672,6 +756,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
         <li><a href="#example-config">Example Config</a></li>
       </ul>
     </li>
+    <li><a href="#custom-css">Custom CSS</a></li>
   </ul>
 </nav>
     </div>

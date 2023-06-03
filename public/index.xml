@@ -26,8 +26,7 @@ It&amp;rsquo;s also tiny and privacy conscious with no external dependencies. Th
       
       <guid>https://poison.lukeorth.com/posts/introducing-poison/</guid>
       <description>&lt;p&gt;&lt;em&gt;Poison&lt;/em&gt; is a &lt;strong&gt;clean&lt;/strong&gt;, &lt;strong&gt;professional&lt;/strong&gt; Hugo theme designed to &lt;strong&gt;captivate&lt;/strong&gt; your readers.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s also &lt;strong&gt;tiny&lt;/strong&gt; and &lt;strong&gt;privacy conscious&lt;/strong&gt; with &lt;em&gt;no external dependencies&lt;/em&gt;.  That&amp;rsquo;s right&amp;mdash;no JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window (try it out and take a look).  &lt;strong&gt;We kept things simple&lt;/strong&gt;.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.&lt;/p&gt;
-&lt;p&gt;All of the static assets for the site (JS files, CSS, and fonts) are located within the theme&amp;rsquo;s &lt;em&gt;/static/&lt;/em&gt; directory.  &lt;strong&gt;That way you know &lt;em&gt;exactly&lt;/em&gt; what&amp;rsquo;s going on your site&lt;/strong&gt;.&lt;/p&gt;</description>
+&lt;p&gt;It&amp;rsquo;s also &lt;strong&gt;tiny&lt;/strong&gt; and &lt;strong&gt;privacy conscious&lt;/strong&gt; with &lt;em&gt;no external dependencies&lt;/em&gt;.  That&amp;rsquo;s right&amp;mdash;no JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  &lt;strong&gt;We kept things simple&lt;/strong&gt;.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.&lt;/p&gt;</description>
     </item>
     
   </channel>

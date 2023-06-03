@@ -8,9 +8,7 @@ series: "How to use poison"
 
 *Poison* is a **clean**, **professional** Hugo theme designed to **captivate** your readers.
 
-It's also **tiny** and **privacy conscious** with *no external dependencies*.  That's right---no JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window (try it out and take a look).  **We kept things simple**.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.
-
-All of the static assets for the site (JS files, CSS, and fonts) are located within the theme's */static/* directory.  **That way you know *exactly* what's going on your site**.
+It's also **tiny** and **privacy conscious** with *no external dependencies*.  That's right---no JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  **We kept things simple**.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.
 
 <!--more-->
 
@@ -18,65 +16,130 @@ All of the static assets for the site (JS files, CSS, and fonts) are located wit
 
 In addition to the standard Built-in templates and shortcodes that come with Hugo, *Poison* offers some unique features of its own.
 
-- **Light & dark mode** -- Give readers the choice to read in light or dark mode.  The user's preference is stored in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.
-- **Table of contents** -- Provide a floating table of contents for readers with large enough screens (i.e. *screen-width > 1600 pixels*).
-- **Series** -- Sensibly link and display content into "series" (i.e. *Tutorial One*, *Tutorial Two*, etc.).
+### Light & dark mode
+
+Give readers the choice to read in light or dark mode.  The user's preference is stored in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.
+
+### Table of contents
+
+Provide a floating table of contents for readers with large enough screens (i.e. *screen-width > 1600 pixels*).
+
+### Series
+
+Sensibly link and display content in "series" (i.e. *Tutorial One*, *Tutorial Two*, etc.).
    
-   This is done with a custom taxonomy, so just add `series` to the frontmatter on the content you'd like to group together.
+This is done with a custom taxonomy. Just add `series` to the frontmatter on any content you want to group together.
 
-    {{< highlight yaml >}}
-    ---
-    title: "Example to demonstrate how to use series"
-    date: 2022-10-04
-    draft: false
-    series: "How to use poison"
-    tags: ["Hugo"]
-    ---
-    {{</highlight >}}
+{{< highlight yaml >}}
+---
+title: "Example to demonstrate how to use series"
+date: 2022-10-04
+draft: false
+series: "How to use poison"
+tags: ["Hugo"]
+---
+{{</highlight >}}
 
-- **KaTeX** -- Make your mathematical notations pop.
+### KaTeX
 
-    For notations that should appear on their own line, use the block quotes `$$ ... $$`
+Make your mathematical notations pop.
+
+For notations that should appear on their own line, use the block quotes `$$ ... $$`
     
-    $$ 5 \times 5 = 25 $$
+$$ 5 \times 5 = 25 $$
 
-    For notations that should appear on the same line, use the inline quotes `$ ... $`
+For notations that should appear on the same line, use the inline quotes `$ ... $`
     
-- **Tabs** -- Some content is just better viewed in tabs.  Luckily we have a shortcode for that.
-    {{< tabs tabTotal="2" >}}
+### Tabs
 
-    {{% tab tabName="First Tab" %}}
+Some content is just better viewed in tabs.  There's a shortcode for that.
+
+{{< tabs tabTotal="2" >}}
+
+{{% tab tabName="First Tab" %}}
 This is **markdown** content.
-    {{% /tab %}}
+{{% /tab %}}
 
-    {{< tab tabName="Second Tab" >}}
-    {{< highlight text >}}
-    This is a code block.
-    {{</ highlight >}}
-    {{< /tab >}}
+{{< tab tabName="Second Tab" >}}
+{{< highlight text >}}
+This is a code block.
+{{</ highlight >}}
+{{< /tab >}}
 
-    {{< /tabs >}}
+{{< /tabs >}}
 
-    ---
-    Here's the code for the tabs above...
+---
+Here's the code for the tabs above...
 
-    {{< highlight text >}}
-    {{</* tabs tabTotal="2" */>}}
+{{< highlight text >}}
+{{</* tabs tabTotal="2" */>}}
 
-    {{%/* tab tabName="First Tab" */%}}
-    This is markdown content.
-    {{%/* /tab */%}}
+{{%/* tab tabName="First Tab" */%}}
+This is markdown content.
+{{%/* /tab */%}}
 
-    {{</* tab tabName="Second Tab" */>}}
-    {{</* highlight text */>}}
-    This is a code block.
-    {{</* /highlight */>}}
-    {{</* /tab */>}}
+{{</* tab tabName="Second Tab" */>}}
+{{</* highlight text */>}}
+This is a code block.
+{{</* /highlight */>}}
+{{</* /tab */>}}
 
-    {{</* /tabs */>}}
-    {{</ highlight >}}
-    
+{{</* /tabs */>}}
+{{</ highlight >}}
+   
+### Mermaid diagrams
 
+There's a shortcode for embedding Mermaid diagrams.
+
+{{< mermaid >}}
+sequenceDiagram
+participant Alice
+participant Bob
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts <br>prevail!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+{{< /mermaid >}}
+
+Here's the code for the diagram above:
+
+{{< highlight text >}}
+{{</* mermaid */>}}
+sequenceDiagram
+participant Alice
+participant Bob
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts <br>prevail!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+{{</* /mermaid */>}}
+{{</ highlight >}}
+
+### PlantUML diagrams
+
+There's a shortcode for embedding PlantUML diagrams.
+
+{{< plantuml id="foo" >}}
+a -> b
+b -> c
+{{< /plantuml >}}
+
+Here's the code for the diagram above:
+
+{{< highlight text >}}
+{{< plantuml id="foo" >}}
+a -> b
+b -> c
+{{< /plantuml >}}
+{{</ highlight >}}
 
 ## Installation
 
@@ -161,13 +224,21 @@ baseURL = "/"
 languageCode = "en-us"
 theme = "poison"
 paginate = 10
-pluralizelisttitles = false
+pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 
 [params]
-    brand = "Poison"                    # name of your site - appears in the sidebar
-    # brand_image = "/images/test.jpg"  # path to the image shown in the sidebar
-    description = "Update this description..."
-    dark_mode = true                    # optional - defaults to false
+    brand = "Poison"                      # name of your site - appears in the sidebar
+    # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
+    description = "Update this description..." # Used as default meta description if not specified in front matter
+    dark_mode = true                      # optional - defaults to false
+    # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
+    
+    # NOTE: The following three params are optional and are used to create meta tags + enhance SEO.
+    # og_image = ""                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url
+                                          # this is also used in the schema output as well. Image is resized to max 1200x630
+                                          # For this to work though og_image and brand_url must be a path inside the assets directory
+                                          # e.g. /assets/images/site/og-image.png becomes images/site/og-image.png
+    # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
 
     # MENU PLACEHOLDER
     # Menu dict keys:
@@ -180,8 +251,9 @@ pluralizelisttitles = false
         {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
 
-    # Links to your socials.  Delete any you don't need/use. 
+    # Links to your socials.  Comment or delete any you don't need/use. 
     github_url = "https://github.com"
+    gitlab_url = "https://gitlab.com"
     linkedin_url = "https://linkedin.com"
     twitter_url = "https://twitter.com"
     mastodon_url = "https://mastodon.social"
@@ -190,6 +262,13 @@ pluralizelisttitles = false
     youtube_url = "https://youtube.com"
     instagram_url = "https://instagram.com"
     facebook_url = "https://facebook.com"
+    email_url = "mailto://user@domain"
+
+    # NOTE: If you don't want to use RSS, comment or delete the following lines
+    # Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml
+    rss_icon = true
+    # Which section the RSS icon links to, defaults to all content. See https://gohugo.io/templates/rss/#section-rss
+    rss_section = "posts"
 
     # Hex colors for your sidebar.
     sidebar_bg_color = "#202020"            # default is #202020
@@ -211,19 +290,32 @@ pluralizelisttitles = false
     table_border_color = "#E5E5E5"  # default is #E5E5E5
     table_stripe_color = "#F9F9F9"  # default is #F9F9F9
 
-
     # Hex colors for your content in dark mode
-    text_color_dark = "#eee"            # default is #eee
-    content_bg_color_dark = "#121212"   # default is #121212
-    post_title_color_dark = "#DBE2E9"   # default is #DBE2E9
-    list_color_dark = "#9d9d9d"         # default is #9d9d9d
-    link_color_dark = "#268bd2"         # default is #268bd2
-    date_color_dark = "#9a9a9a"         # default is #9a9a9a
-    table_border_color_dark = "#515151" # default is #515151
-    table_stripe_color_dark = "#202020" # default is #202020
-
+    text_color_dark = "#eee"                # default is #eee
+    content_bg_color_dark = "#121212"       # default is #121212
+    post_title_color_dark = "#DBE2E9"       # default is #DBE2E9
+    list_color_dark = "#9d9d9d"             # default is #9d9d9d
+    link_color_dark = "#268bd2"             # default is #268bd2
+    date_color_dark = "#9a9a9a"             # default is #9a9a9a
+    table_border_color_dark = "#515151"     # default is #515151
+    table_stripe_color_dark = "#202020"     # default is #202020
+    code_color = "#bf616a"                  # default is #bf616a
+    code_background_color = "#E5E5E5"       # default is #E5E5E5
+    code_color_dark = "#ff7f7f"             # default is #ff7f7f
+    code_background_color_dark = "#393D47"  # default is #393D47
 
 [taxonomies]
     series = 'series'
     tags = 'tags'
+{{</highlight >}}
+
+## Custom CSS
+
+You can override any setting in Poison's static CSS files by adding your own `/static/css/custom.css` file. For example, if you want to override the title font and font size, you could add this:
+
+{{< highlight toml >}}
+.sidebar-about h1 {
+  font-size: 1.4em;
+  font-family: "Monaco", monospace;
+}
 {{</highlight >}}
