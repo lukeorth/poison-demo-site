@@ -24,8 +24,7 @@ pluralizelisttitles = false
     twitter_url = "https://twitter.com"
     discord_url = "https://discord.com"
     youtube_url = "https://youtube.com"
-    instagram_url = "https://instagram.com"
-    # facebook_url = "https://facebook.com"
+    email_url = "mailto://user@domain"
 
     # Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml
     rss_icon = true
