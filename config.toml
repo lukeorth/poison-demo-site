@@ -5,6 +5,7 @@ theme = "poison"
 paginate = 10
 pluralizelisttitles = false
 disqusShortname = 'poison'
+disqus_url = 'https://poison.lukeorth.com'
 
 [params]
     brand = "Poison"
