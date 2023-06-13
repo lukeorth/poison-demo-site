@@ -131,7 +131,7 @@
     },
     "datePublished": "2022-11-23",
     "description": "",
-    "wordCount":  1545 ,
+    "wordCount":  1896 ,
     "mainEntityOfPage": "True",
     "dateModified": "2022-11-23",
     "image": {
@@ -483,13 +483,29 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </div>
 
   <p><em>Poison</em> is a <strong>clean</strong>, <strong>professional</strong> Hugo theme designed to <strong>captivate</strong> your readers.</p>
-<p>It&rsquo;s also <strong>tiny</strong> and <strong>privacy conscious</strong> with <em>no external dependencies</em>.  That&rsquo;s right&mdash;no JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  <strong>We kept things simple</strong>.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.</p>
+<p>It&rsquo;s also <strong>tiny</strong> and <strong>privacy conscious</strong> with <em>no external dependencies</em> (unless you opt to include comments).  No JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  <strong>We kept things simple</strong>.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.</p>
 <h2 id="features">Features</h2>
 <p>In addition to the standard Built-in templates and shortcodes that come with Hugo, <em>Poison</em> offers some unique features of its own.</p>
 <h3 id="light--dark-mode">Light &amp; dark mode</h3>
-<p>Give readers the choice to read in light or dark mode.  The user&rsquo;s preference is stored in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.</p>
+<p>Give readers the choice to read in light or dark mode.  The user&rsquo;s preference is remembered and saved in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.</p>
 <h3 id="table-of-contents">Table of contents</h3>
-<p>Provide a floating table of contents for readers with large enough screens (i.e. <em>screen-width &gt; 1600 pixels</em>).</p>
+<p>Provide a floating table of contents for readers with large enough screens (i.e. <em>screen-width greater than 1600 pixels</em>).</p>
+<h3 id="comments">Comments</h3>
+<p>Facilitate discourse by allowing users to comment on your posts.  <em>Poison</em> currently supports two different commenting engines for this purpose &ndash; <a href="https://disqus.com/">Disqus</a> and <a href="https://remark42.com/">Remark42</a>.</p>
+<p><strong>Note</strong>: <em>Enabling comments will add external dependencies.</em></p>
+<ul>
+<li><a href="https://about.disqus.com/disqus-demo-page">Disqus Demo Site</a></li>
+<li><a href="https://remark42.com/demo/">Remark42 Demo Site</a></li>
+</ul>
+<p><em><strong>Disqus</strong></em> is free and easy to use.  Checkout the <a href="https://gohugo.io/content-management/comments/">Hugo docs</a> to get started.  Once you&rsquo;ve created a <em>Disqus</em> account, you can activate it in the <em>Poison</em> theme by adding a single line to your <code>config.toml</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>disqusShortname = &#39;yourDisqusShortname&#39;</span></span></code></pre></div>
+<p>This is a great option for people that don&rsquo;t want to bother with self-hosting their own commenting engine; however, it has some drawbacks.  Because <em>Disqus</em> provides this service for free, they recoup any financial loss by injecting third-party ad trackers onto your website.  These trackers help to collect and sell information about your users, while also negatively affecting your site&rsquo;s speed.</p>
+<p>Even still, <em>Disqus</em> may be the best solution depending on your situation (we use it on this demo site).  The above paragraph is only meant to highlight its trade-offs and not meant to discourage its use entirely.</p>
+<p><em><strong>Remark42</strong></em> is a lightweight, open source commenting engine that doesn&rsquo;t spy on your users.  The downside is that you must host it yourself.  Checkout the <em>Remark42</em> <a href="https://remark42.com/">documentation</a> to get started.  I also found <a href="https://www.devbitsandbytes.com/setting-up-remark42-from-scratch/">this blog post</a> helpful when setting it up on <a href="https://lukeorth.com">my site</a>.</p>
+<p>Once everything is set up, you can activate it in the <em>Poison</em> theme by including the following in your <code>config.toml</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>remark42 = true
+</span></span><span style="display:flex;"><span>remark42_host = &#34;https://yourhost.com&#34;
+</span></span><span style="display:flex;"><span>remark42_site_id = &#34;your_site_id&#34;</span></span></code></pre></div>
 <h3 id="series">Series</h3>
 <p>Sensibly link and display content in &ldquo;series&rdquo; (i.e. <em>Tutorial One</em>, <em>Tutorial Two</em>, etc.).</p>
 <p>This is done with a custom taxonomy. Just add <code>series</code> to the frontmatter on any content you want to group together.</p>
@@ -518,7 +534,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 	    
         
             
-            <button class="tab active" id="bfedac">
+            <button class="tab active" id="dafebc">
             
 
                 First Tab
@@ -527,7 +543,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 	    
         
             
-            <button class="tab" id="cafedb">
+            <button class="tab" id="adbcfe">
             
 
                 Second Tab
@@ -540,7 +556,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
     
         
-            <div class="tabcontent bfedac" style="display:block;">
+            <div class="tabcontent dafebc" style="display:block;">
         
 
         <p>This is <strong>markdown</strong> content.</p>
@@ -551,7 +567,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
     
         
-            <div class="tabcontent cafedb">
+            <div class="tabcontent adbcfe">
         
 
         
@@ -696,12 +712,20 @@ b -&gt; c
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">10</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">pluralizelisttitles</span> = <span style="color:#66d9ef">false</span>   <span style="color:#75715e"># removes the automatically appended &#34;s&#34; on sidebar entries</span>
 </span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># NOTE: If using Disqus as commenting engine, uncomment and configure this line</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># disqusShortname = &#34;yourDisqusShortname&#34;</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">brand</span> = <span style="color:#e6db74">&#34;Poison&#34;</span>                      <span style="color:#75715e"># name of your site - appears in the sidebar</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># brand_image = &#34;/images/test.jpg&#34;    # path to the image shown in the sidebar</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Update this description...&#34;</span> <span style="color:#75715e"># Used as default meta description if not specified in front matter</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dark_mode</span> = <span style="color:#66d9ef">true</span>                      <span style="color:#75715e"># optional - defaults to false</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># favicon = &#34;favicon.png&#34;             # path to favicon (defaults to favicon.png)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># NOTE: If using Remark42 as commenting engine, uncomment and configure these lines</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># remark42 = true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># remark42_host = &#34;https://yourhost.com&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># remark42_site_id = &#34;your_site_id&#34;</span>
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># NOTE: The following three params are optional and are used to create meta tags + enhance SEO.</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># og_image = &#34;&#34;                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url</span>
@@ -783,6 +807,15 @@ b -&gt; c
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-size</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#ae81ff">1.4</span><span style="color:#a6e22e">em</span><span style="color:#960050;background-color:#1e0010">;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-family</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;Monaco&#34;</span>, <span style="color:#a6e22e">monospace</span><span style="color:#960050;background-color:#1e0010">;</span>
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="suggestions--contributions">Suggestions / Contributions</h2>
+<p>Please feel free to add suggestions for new features by opening a new issue in GitHub.  If you like the theme, let us know in the comments below!</p>
+<p>A big shout out to these top contributors:</p>
+<ul>
+<li><a href="https://github.com/traveltissues">Darius Makovsky (traveltissues)</a></li>
+<li><a href="https://github.com/KarlAustin">Karl Austin (KarlAustin)</a></li>
+<li><a href="https://github.com/Diogo-Almeida3">Diogo Almeida (Diogo-Almeida3)</a></li>
+<li><a href="https://github.com/eyegog">Ayden Holmes (eyegog)</a></li>
+</ul>
   <hr>
 <div class="footer">
     
@@ -846,6 +879,7 @@ b -&gt; c
       <ul>
         <li><a href="#light--dark-mode">Light &amp; dark mode</a></li>
         <li><a href="#table-of-contents">Table of contents</a></li>
+        <li><a href="#comments">Comments</a></li>
         <li><a href="#series">Series</a></li>
         <li><a href="#katex">KaTeX</a></li>
         <li><a href="#tabs">Tabs</a></li>
@@ -861,6 +895,7 @@ b -&gt; c
       </ul>
     </li>
     <li><a href="#custom-css">Custom CSS</a></li>
+    <li><a href="#suggestions--contributions">Suggestions / Contributions</a></li>
   </ul>
 </nav>
     </div>

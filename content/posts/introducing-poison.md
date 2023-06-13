@@ -9,7 +9,7 @@ series: "How to use poison"
 
 *Poison* is a **clean**, **professional** Hugo theme designed to **captivate** your readers.
 
-It's also **tiny** and **privacy conscious** with *no external dependencies*.  That's right---no JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  **We kept things simple**.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.
+It's also **tiny** and **privacy conscious** with *no external dependencies* (unless you opt to include comments).  No JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  **We kept things simple**.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.
 
 <!--more-->
 
@@ -19,11 +19,40 @@ In addition to the standard Built-in templates and shortcodes that come with Hug
 
 ### Light & dark mode
 
-Give readers the choice to read in light or dark mode.  The user's preference is stored in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.
+Give readers the choice to read in light or dark mode.  The user's preference is remembered and saved in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.
 
 ### Table of contents
 
-Provide a floating table of contents for readers with large enough screens (i.e. *screen-width > 1600 pixels*).
+Provide a floating table of contents for readers with large enough screens (i.e. *screen-width greater than 1600 pixels*).
+
+### Comments
+
+Facilitate discourse by allowing users to comment on your posts.  *Poison* currently supports two different commenting engines for this purpose -- [Disqus](https://disqus.com/) and [Remark42](https://remark42.com/).
+
+**Note**: *Enabling comments will add external dependencies.*
+
+- [Disqus Demo Site](https://about.disqus.com/disqus-demo-page) 
+- [Remark42 Demo Site](https://remark42.com/demo/)
+
+***Disqus*** is free and easy to use.  Checkout the [Hugo docs](https://gohugo.io/content-management/comments/) to get started.  Once you've created a *Disqus* account, you can activate it in the *Poison* theme by adding a single line to your `config.toml` file.
+
+{{< highlight text >}}
+disqusShortname = 'yourDisqusShortname'
+{{</highlight >}}
+
+This is a great option for people that don't want to bother with self-hosting their own commenting engine; however, it has some drawbacks.  Because *Disqus* provides this service for free, they recoup any financial loss by injecting third-party ad trackers onto your website.  These trackers help to collect and sell information about your users, while also negatively affecting your site's speed.
+
+Even still, *Disqus* may be the best solution depending on your situation (we use it on this demo site).  The above paragraph is only meant to highlight its trade-offs and not meant to discourage its use entirely.
+
+***Remark42*** is a lightweight, open source commenting engine that doesn't spy on your users.  The downside is that you must host it yourself.  Checkout the *Remark42* [documentation](https://remark42.com/) to get started.  I also found [this blog post](https://www.devbitsandbytes.com/setting-up-remark42-from-scratch/) helpful when setting it up on [my site](https://lukeorth.com).
+
+Once everything is set up, you can activate it in the *Poison* theme by including the following in your `config.toml` file.
+
+{{< highlight text >}}
+remark42 = true
+remark42_host = "https://yourhost.com"
+remark42_site_id = "your_site_id"
+{{</highlight >}}
 
 ### Series
 
@@ -227,12 +256,20 @@ theme = "poison"
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 
+# NOTE: If using Disqus as commenting engine, uncomment and configure this line
+# disqusShortname = "yourDisqusShortname"
+
 [params]
     brand = "Poison"                      # name of your site - appears in the sidebar
     # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
     description = "Update this description..." # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
+
+    # NOTE: If using Remark42 as commenting engine, uncomment and configure these lines
+    # remark42 = true
+    # remark42_host = "https://yourhost.com"
+    # remark42_site_id = "your_site_id"
     
     # NOTE: The following three params are optional and are used to create meta tags + enhance SEO.
     # og_image = ""                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url
@@ -320,3 +357,14 @@ You can override any setting in Poison's static CSS files by adding your own `/s
   font-family: "Monaco", monospace;
 }
 {{</highlight >}}
+
+## Suggestions / Contributions
+
+Please feel free to add suggestions for new features by opening a new issue in GitHub.  If you like the theme, let us know in the comments below!
+
+A big shout out to these top contributors:
+
+- [Darius Makovsky (traveltissues)](https://github.com/traveltissues)
+- [Karl Austin (KarlAustin)](https://github.com/KarlAustin)
+- [Diogo Almeida (Diogo-Almeida3)](https://github.com/Diogo-Almeida3)
+- [Ayden Holmes (eyegog)](https://github.com/eyegog)
