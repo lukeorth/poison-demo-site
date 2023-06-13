@@ -4,6 +4,7 @@ title = "Poison"
 theme = "poison"
 paginate = 10
 pluralizelisttitles = false
+disqusShortname = 'poison'
 
 [params]
     brand = "Poison"
