@@ -131,7 +131,7 @@
     },
     "datePublished": "2022-11-23",
     "description": "",
-    "wordCount":  1896 ,
+    "wordCount":  1901 ,
     "mainEntityOfPage": "True",
     "dateModified": "2022-11-23",
     "image": {
@@ -502,10 +502,11 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <p>This is a great option for people that don&rsquo;t want to bother with self-hosting their own commenting engine; however, it has some drawbacks.  Because <em>Disqus</em> provides this service for free, they recoup any financial loss by injecting third-party ad trackers onto your website.  These trackers help to collect and sell information about your users, while also negatively affecting your site&rsquo;s speed.</p>
 <p>Even still, <em>Disqus</em> may be the best solution depending on your situation (we use it on this demo site).  The above paragraph is only meant to highlight its trade-offs and not meant to discourage its use entirely.</p>
 <p><em><strong>Remark42</strong></em> is a lightweight, open source commenting engine that doesn&rsquo;t spy on your users.  The downside is that you must host it yourself.  Checkout the <em>Remark42</em> <a href="https://remark42.com/">documentation</a> to get started.  I also found <a href="https://www.devbitsandbytes.com/setting-up-remark42-from-scratch/">this blog post</a> helpful when setting it up on <a href="https://lukeorth.com">my site</a>.</p>
-<p>Once everything is set up, you can activate it in the <em>Poison</em> theme by including the following in your <code>config.toml</code> file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>remark42 = true
-</span></span><span style="display:flex;"><span>remark42_host = &#34;https://yourhost.com&#34;
-</span></span><span style="display:flex;"><span>remark42_site_id = &#34;your_site_id&#34;</span></span></code></pre></div>
+<p>Once everything is set up, you can activate it in the <em>Poison</em> theme by including the following in the <code>[params]</code> section of your <code>config.toml</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>    remark42 = true
+</span></span><span style="display:flex;"><span>    remark42_host = &#34;https://yourhost.com&#34;
+</span></span><span style="display:flex;"><span>    remark42_site_id = &#34;your_site_id&#34;</span></span></code></pre></div>
 <h3 id="series">Series</h3>
 <p>Sensibly link and display content in &ldquo;series&rdquo; (i.e. <em>Tutorial One</em>, <em>Tutorial Two</em>, etc.).</p>
 <p>This is done with a custom taxonomy. Just add <code>series</code> to the frontmatter on any content you want to group together.</p>
@@ -534,7 +535,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 	    
         
             
-            <button class="tab active" id="dafebc">
+            <button class="tab active" id="adfcbe">
             
 
                 First Tab
@@ -543,7 +544,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 	    
         
             
-            <button class="tab" id="adbcfe">
+            <button class="tab" id="badecf">
             
 
                 Second Tab
@@ -556,7 +557,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
     
         
-            <div class="tabcontent dafebc" style="display:block;">
+            <div class="tabcontent adfcbe" style="display:block;">
         
 
         <p>This is <strong>markdown</strong> content.</p>
@@ -567,7 +568,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
     
         
-            <div class="tabcontent adbcfe">
+            <div class="tabcontent badecf">
         
 
         
