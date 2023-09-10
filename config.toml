@@ -13,7 +13,7 @@ disqus_url = 'https://poison.lukeorth.com'
     # og_image = ""                             # path to social icon - front matter: image takes precedent, then og_image, then brand_url
     # publisher_icon = ""                       # path to publisher icon - defaults to favicon, used in schema
     # favicon = ""                              # path to favicon
-    # description = "Update this description..."  # Used as default meta description if not specified in front matter
+    description = 'A pragmatic Hugo theme for bloggers. Based on the classic <a href="https://github.com/poole/hyde" target="_blank">Hyde</a> design by <a href="https://github.com/mdo" target="_blank">@mdo</a>'
     dark_mode = true
 
     menu = [
