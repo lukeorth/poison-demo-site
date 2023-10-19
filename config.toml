@@ -28,7 +28,7 @@ pluralizelisttitles = false
 
     # Plausible
     plausible = true
-    plausible_domain = "lukeorth.com"
+    plausible_domain = "poison.lukeorth.com"
     plausible_script = "https://plausible.lukeorth.com/js/script.js"
 
     # Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml
