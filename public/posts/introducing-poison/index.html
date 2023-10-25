@@ -20,7 +20,7 @@
 
 
 
-<script defer language="javascript" type="text/javascript" src="/js/bundle.min.898adc5ab5b0e2f3b90f64f9ea8bec4d42675374871e6df21d887d17c090db10.js"></script>
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.a43a549406127e0715f68083c987d71d0c71054cd57edea77aa709ed9958af6e.js"></script>
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.119.0">
 
 
     
     
 
-<link type="text/css" rel="stylesheet" href="/css/bundle.min.8c227569d4bf422323072472267fbadf39d2c717cb88332a8413d08b0b2b17e8.css">
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.9253bc12513d029afeda19b8831df5c2e217d0092a9f142adac20b5376162a30.css">
 
 
     
@@ -395,13 +395,25 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </div>
 
   <p><em>Poison</em> is a <strong>clean</strong>, <strong>professional</strong> Hugo theme designed to <strong>captivate</strong> your readers.</p>
-<p>It&rsquo;s also <strong>tiny</strong> and <strong>privacy conscious</strong> with <em>no external dependencies</em> (unless you opt to include comments).  No JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  <strong>We kept things simple</strong>.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.</p>
+<p>It&rsquo;s also <strong>tiny</strong> and <strong>privacy conscious</strong>.  No JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  <strong>We kept things simple</strong>.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.</p>
+<p>All the static assets for the site (JS files, CSS, and fonts) are located within the theme&rsquo;s <em>/assets/</em> directory.  <strong>That way you know <em>exactly</em> what&rsquo;s going onto your site</strong>.</p>
 <h2 id="features">Features</h2>
 <p>In addition to the standard Built-in templates and shortcodes that come with Hugo, <em>Poison</em> offers some unique features of its own.</p>
-<h3 id="light--dark-mode">Light &amp; dark mode</h3>
+<h3 id="light--dark-mode">Light &amp; Dark Mode</h3>
 <p>Give readers the choice to read in light or dark mode.  The user&rsquo;s preference is remembered and saved in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.</p>
-<h3 id="table-of-contents">Table of contents</h3>
-<p>Provide a floating table of contents for readers with large enough screens (i.e. <em>screen-width greater than 1600 pixels</em>).</p>
+<h3 id="table-of-contents">Table of Contents</h3>
+<p>Provide a floating table of contents for readers with large enough screens (i.e. <em>screen-width &gt; 1600 pixels</em>).</p>
+<p>If you prefer not to display a table of contents, you can disable them site-wide in your <code>config.toml</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hideToc</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#66d9ef">true</span></span></span></code></pre></div>
+<p>Alternatively, you can choose to disable the table of contents on a per-post basis by putting the flag in the frontmatter of an individual post.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Example to demonstrate how to hide the table of contents on a single post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">date</span>: <span style="color:#e6db74">2023-07-10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">draft</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">hideToc</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">tags</span>: [<span style="color:#e6db74">&#34;Hugo&#34;</span>]
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div>
 <h3 id="comments">Comments</h3>
 <p>Facilitate discourse by allowing users to comment on your posts.  <em>Poison</em> currently supports two different commenting engines for this purpose &ndash; <a href="https://disqus.com/" target="_blank">Disqus</a> and <a href="https://remark42.com/" target="_blank">Remark42</a>.</p>
 <p><strong>Note</strong>: <em>Enabling comments will add external dependencies.</em></p>
@@ -419,6 +431,33 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span><span style="display:flex;"><span>    remark42 = true
 </span></span><span style="display:flex;"><span>    remark42_host = &#34;https://yourhost.com&#34;
 </span></span><span style="display:flex;"><span>    remark42_site_id = &#34;your_site_id&#34;</span></span></code></pre></div>
+<h3 id="analytics">Analytics</h3>
+<p>Gain insights on who your users are.  Poison currently supports <a href="https://plausible.io" target="_blank">Plausible</a> which is available via a paid service or by <a href="https://github.com/plausible/analytics" target="_blank">self-hosting</a>.</p>
+<p><strong>Note</strong>: <em>Enabling analytics will add external dependencies.</em></p>
+<p>Once you&rsquo;ve established your Plausible instance, you can activate it by adding three lines to your <code>config.toml</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plausible</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plausible_domain</span> = <span style="color:#e6db74">&#34;myblog.com&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">plausible_script</span> = <span style="color:#e6db74">&#34;https://plausible.myblog.com/js/script.js&#34;</span></span></span></code></pre></div>
+<p>This will insert the necessary code in the <code>&lt;head&gt;</code> on each page and will allow your Plausible instance to collect a limited set of data on your users.</p>
+<p>For reference, the configuration above would add the following code to each page.  Adjust according to your specific environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&lt;script defer data-domain=&#34;myblog.com&#34; src=&#34;https://plausible.myblog.com/js/script.js&#34;&gt;&lt;/script&gt;</span></span></code></pre></div>
+<h3 id="email-newsletters">Email Newsletters</h3>
+<p>Allow users to subscribe to your blog newsletters via email.
+Poison currently supports <a href="https://listmonk.app/" target="_blank">Listmonk</a> which is available via <a href="https://github.com/knadh/listmonk" target="_blank">self-hosting</a>.
+Listmonk is a standalone, self-hosted, newsletter and mailing list manager.
+The downside is that you must host it yourself.
+Checkout the Listmonk <a href="https://listmonk.app/docs/" target="_blank">documentation</a> to get started.</p>
+<p>Once you&rsquo;ve established your Listmonk instance, activate it by adding these lines to your <code>config.toml</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_host</span> = <span style="color:#e6db74">&#34;https://listmonk.your_domain.tld&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_subscription_list_uiid</span> = <span style="color:#e6db74">&#34;YOUR_NEWSLETTERS_LIST_UIID&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_subscription_form_text</span> = <span style="color:#e6db74">&#34;Subscribe to my newsletters&#34;</span>       <span style="color:#75715e"># default: Subscribe to my newsletters</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_subscription_success_message</span> = <span style="color:#e6db74">&#34;Thanks for subscribing&#34;</span>      <span style="color:#75715e"># default: Thanks for subscribing</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">listmonk_subscription_error_message</span> = <span style="color:#e6db74">&#34;Something went wrong&#34;</span>          <span style="color:#75715e"># default: Sorry, something went wrong. Please, try again</span></span></span></code></pre></div>
+<p>This will insert a form at the bottom of each post&rsquo;s content.
+The user will be subscribed to the newsletter specified in the <code>listmonk_subscription_list_uiid</code> parameter.</p>
 <h3 id="series">Series</h3>
 <p>Sensibly link and display content in &ldquo;series&rdquo; (i.e. <em>Tutorial One</em>, <em>Tutorial Two</em>, etc.).</p>
 <p>This is done with a custom taxonomy. Just add <code>series</code> to the frontmatter on any content you want to group together.</p>
@@ -434,6 +473,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <p>For notations that should appear on their own line, use the block quotes <code>$$ ... $$</code></p>
 <p>$$ 5 \times 5 = 25 $$</p>
 <p>For notations that should appear on the same line, use the inline quotes <code>$ ... $</code></p>
+<p><strong>Note</strong>: <em>Enabling KaTeX will add external dependencies.</em></p>
 <h3 id="tabs">Tabs</h3>
 <p>Some content is just better viewed in tabs.  There&rsquo;s a shortcode for that.</p>
 
@@ -447,7 +487,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 	    
         
             
-            <button class="tab active" id="cbadfe">
+            <button class="tab active" id="dfeabc">
             
 
                 First Tab
@@ -456,7 +496,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 	    
         
             
-            <button class="tab" id="badfec">
+            <button class="tab" id="bdaecf">
             
 
                 Second Tab
@@ -469,7 +509,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
     
         
-            <div class="tabcontent cbadfe" style="display:block;">
+            <div class="tabcontent dfeabc" style="display:block;">
         
 
         <p>This is <strong>markdown</strong> content.</p>
@@ -480,7 +520,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
     
     
         
-            <div class="tabcontent badfec">
+            <div class="tabcontent bdaecf">
         
 
         
@@ -509,6 +549,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span><span style="display:flex;"><span>{{&lt; /tabs &gt;}}</span></span></code></pre></div>
 <h3 id="mermaid-diagrams">Mermaid diagrams</h3>
 <p>There&rsquo;s a shortcode for embedding Mermaid diagrams.</p>
+<p><strong>Note</strong>: <em>Enabling Mermaid diagrams will add external dependencies.</em></p>
 
 
 <script type="module">
@@ -555,10 +596,11 @@ Bob-->>John: Jolly good!
 </span></span><span style="display:flex;"><span>{{&lt; /mermaid &gt;}}</span></span></code></pre></div>
 <h3 id="plantuml-diagrams">PlantUML diagrams</h3>
 <p>There&rsquo;s a shortcode for embedding PlantUML diagrams.</p>
+<p><strong>Note</strong>: <em>Enabling PlantUML diagrams will add external dependencies.</em></p>
 
 
 
-<script language="javascript" type="text/javascript" src="/js/plantuml-bundle.min.6d6882d794b2cbf284e3c01462144c24fc588dfc67ce09603c3a07b964996fea.js"></script>
+<script language="javascript" type="text/javascript" src="/js/plantuml-bundle.min.807fab53b2851152b55b6a3b90b15725b9d6fa357972935ec222805895bd1001.js"></script>
 
 
 
@@ -625,6 +667,10 @@ b -&gt; c
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Example of a list without a subheading or limit.</span>
 </span></span><span style="display:flex;"><span>        {<span style="color:#a6e22e">Name</span> = <span style="color:#e6db74">&#34;Projects&#34;</span>, <span style="color:#a6e22e">URL</span> = <span style="color:#e6db74">&#34;/projects/&#34;</span>},
 </span></span><span style="display:flex;"><span>    ]</span></span></code></pre></div>
+<h3 id="the-front-page">The Front Page</h3>
+<p>When visiting the base url for the site, i.e. <code>your.domain.com/</code>, a paginated feed of your recently added content is displayed in reverse chronological order. By default, only content in the &ldquo;posts&rdquo; <a href="https://gohugo.io/content-management/page-bundles/" target="_blank">page bundle</a> is displayed. You can configure a list of page bundle names to be included on this page by adding the <code>front_page_content</code> parameter to your config.toml file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">front_page_content</span> = [<span style="color:#e6db74">&#34;posts&#34;</span>, <span style="color:#e6db74">&#34;projects&#34;</span>]</span></span></code></pre></div>
 <h3 id="example-config">Example Config</h3>
 <p>I recommend starting by copying/pasting the following code into your config.toml file.  Once you see how it looks, play with the settings as needed.</p>
 <p><strong>NOTE</strong>: To display an image in your sidebar, you&rsquo;ll need to uncomment the <code>brand_image</code> path below and have it point to an image file in your project.  The path is relative to the <code>static</code> directory.  If you don&rsquo;t have an image, just leave this line commented out.</p>
@@ -731,7 +777,7 @@ b -&gt; c
 </span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">taxonomies</span>]
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">series</span> = <span style="color:#e6db74">&#39;series&#39;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tags</span> = <span style="color:#e6db74">&#39;tags&#39;</span></span></span></code></pre></div>
-<h2 id="custom-css">Custom CSS</h2>
+<h3 id="custom-css">Custom CSS</h3>
 <p>You can override any setting in Poison&rsquo;s static CSS files by adding your own <code>/assets/css/custom.css</code> file. For example, if you want to override the title font and font size, you could add this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>.<span style="color:#a6e22e">sidebar-about</span> <span style="color:#a6e22e">h1</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-size</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#ae81ff">1.4</span><span style="color:#a6e22e">em</span><span style="color:#960050;background-color:#1e0010">;</span>
@@ -747,6 +793,7 @@ b -&gt; c
 <li><a href="https://github.com/Diogo-Almeida3" target="_blank">Diogo Almeida (Diogo-Almeida3)</a></li>
 <li><a href="https://github.com/eyegog" target="_blank">Ayden Holmes (eyegog)</a></li>
 </ul>
+  
   <hr>
 <div class="footer">
     
@@ -783,9 +830,11 @@ b -&gt; c
   <ul>
     <li><a href="#features">Features</a>
       <ul>
-        <li><a href="#light--dark-mode">Light &amp; dark mode</a></li>
-        <li><a href="#table-of-contents">Table of contents</a></li>
+        <li><a href="#light--dark-mode">Light &amp; Dark Mode</a></li>
+        <li><a href="#table-of-contents">Table of Contents</a></li>
         <li><a href="#comments">Comments</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="#email-newsletters">Email Newsletters</a></li>
         <li><a href="#series">Series</a></li>
         <li><a href="#katex">KaTeX</a></li>
         <li><a href="#tabs">Tabs</a></li>
@@ -797,10 +846,11 @@ b -&gt; c
     <li><a href="#how-to-configure">How to Configure</a>
       <ul>
         <li><a href="#the-sidebar-menu">The Sidebar Menu</a></li>
+        <li><a href="#the-front-page">The Front Page</a></li>
         <li><a href="#example-config">Example Config</a></li>
+        <li><a href="#custom-css">Custom CSS</a></li>
       </ul>
     </li>
-    <li><a href="#custom-css">Custom CSS</a></li>
     <li><a href="#suggestions--contributions">Suggestions / Contributions</a></li>
   </ul>
 </nav>

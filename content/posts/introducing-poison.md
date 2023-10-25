@@ -9,7 +9,9 @@ series: "How to use poison"
 
 *Poison* is a **clean**, **professional** Hugo theme designed to **captivate** your readers.
 
-It's also **tiny** and **privacy conscious** with *no external dependencies* (unless you opt to include comments).  No JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  **We kept things simple**.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.
+It's also **tiny** and **privacy conscious**.  No JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  **We kept things simple**.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.
+
+All the static assets for the site (JS files, CSS, and fonts) are located within the theme's */assets/* directory.  **That way you know *exactly* what's going onto your site**.
 
 <!--more-->
 
@@ -17,13 +19,32 @@ It's also **tiny** and **privacy conscious** with *no external dependencies* (un
 
 In addition to the standard Built-in templates and shortcodes that come with Hugo, *Poison* offers some unique features of its own.
 
-### Light & dark mode
+### Light & Dark Mode
 
 Give readers the choice to read in light or dark mode.  The user's preference is remembered and saved in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.
 
-### Table of contents
+### Table of Contents
 
-Provide a floating table of contents for readers with large enough screens (i.e. *screen-width greater than 1600 pixels*).
+Provide a floating table of contents for readers with large enough screens (i.e. *screen-width > 1600 pixels*).
+
+If you prefer not to display a table of contents, you can disable them site-wide in your ```config.toml``` file.
+
+{{< highlight toml >}}
+[params]
+    hideToc: true
+{{</highlight >}}
+
+Alternatively, you can choose to disable the table of contents on a per-post basis by putting the flag in the frontmatter of an individual post.
+
+{{< highlight yaml >}}
+---
+title: "Example to demonstrate how to hide the table of contents on a single post"
+date: 2023-07-10
+draft: false
+hideToc: true
+tags: ["Hugo"]
+---
+{{</highlight >}}
 
 ### Comments
 
@@ -55,6 +76,53 @@ Once everything is set up, you can activate it in the *Poison* theme by includin
     remark42_site_id = "your_site_id"
 {{</highlight >}}
 
+
+### Analytics
+
+Gain insights on who your users are.  Poison currently supports [Plausible](https://plausible.io) which is available via a paid service or by [self-hosting](https://github.com/plausible/analytics).
+
+**Note**: *Enabling analytics will add external dependencies.*
+
+Once you've established your Plausible instance, you can activate it by adding three lines to your ``config.toml`` file.
+
+{{< highlight toml >}}
+[params]
+    plausible = true
+    plausible_domain = "myblog.com"
+    plausible_script = "https://plausible.myblog.com/js/script.js"
+{{</highlight >}}
+
+This will insert the necessary code in the ``<head>`` on each page and will allow your Plausible instance to collect a limited set of data on your users.
+
+For reference, the configuration above would add the following code to each page.  Adjust according to your specific environment.
+
+{{< highlight text >}}
+<script defer data-domain="myblog.com" src="https://plausible.myblog.com/js/script.js"></script>
+{{</highlight >}}
+
+### Email Newsletters
+
+Allow users to subscribe to your blog newsletters via email. 
+Poison currently supports [Listmonk](https://listmonk.app/) which is available via [self-hosting](https://github.com/knadh/listmonk).
+Listmonk is a standalone, self-hosted, newsletter and mailing list manager.
+The downside is that you must host it yourself. 
+Checkout the Listmonk [documentation](https://listmonk.app/docs/) to get started.
+
+Once you've established your Listmonk instance, activate it by adding these lines to your ``config.toml`` file.
+
+{{< highlight toml >}}
+[params]
+    listmonk = true
+    listmonk_host = "https://listmonk.your_domain.tld"
+    listmonk_subscription_list_uiid = "YOUR_NEWSLETTERS_LIST_UIID"
+    listmonk_subscription_form_text = "Subscribe to my newsletters"       # default: Subscribe to my newsletters
+    listmonk_subscription_success_message = "Thanks for subscribing"      # default: Thanks for subscribing
+    listmonk_subscription_error_message = "Something went wrong"          # default: Sorry, something went wrong. Please, try again
+{{</highlight >}}
+
+This will insert a form at the bottom of each post's content. 
+The user will be subscribed to the newsletter specified in the `listmonk_subscription_list_uiid` parameter.
+
 ### Series
 
 Sensibly link and display content in "series" (i.e. *Tutorial One*, *Tutorial Two*, etc.).
@@ -80,6 +148,8 @@ For notations that should appear on their own line, use the block quotes `$$ ...
 $$ 5 \times 5 = 25 $$
 
 For notations that should appear on the same line, use the inline quotes `$ ... $`
+
+**Note**: *Enabling KaTeX will add external dependencies.*
     
 ### Tabs
 
@@ -122,6 +192,8 @@ This is a code block.
 
 There's a shortcode for embedding Mermaid diagrams.
 
+**Note**: *Enabling Mermaid diagrams will add external dependencies.*
+
 {{< mermaid >}}
 sequenceDiagram
 participant Alice
@@ -157,6 +229,8 @@ Bob-->>John: Jolly good!
 ### PlantUML diagrams
 
 There's a shortcode for embedding PlantUML diagrams.
+
+**Note**: *Enabling PlantUML diagrams will add external dependencies.*
 
 {{< plantuml id="foo" >}}
 a -> b
@@ -243,6 +317,14 @@ menu = [
         # Example of a list without a subheading or limit.
         {Name = "Projects", URL = "/projects/"},
     ]
+{{</highlight >}}
+
+### The Front Page
+When visiting the base url for the site, i.e. `your.domain.com/`, a paginated feed of your recently added content is displayed in reverse chronological order. By default, only content in the "posts" [page bundle](https://gohugo.io/content-management/page-bundles/) is displayed. You can configure a list of page bundle names to be included on this page by adding the `front_page_content` parameter to your config.toml file.
+
+{{< highlight toml >}}
+[params]
+  front_page_content = ["posts", "projects"]
 {{</highlight >}}
 
 ### Example Config
@@ -356,7 +438,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     tags = 'tags'
 {{</highlight >}}
 
-## Custom CSS
+### Custom CSS
 
 You can override any setting in Poison's static CSS files by adding your own `/assets/css/custom.css` file. For example, if you want to override the title font and font size, you could add this:
 
