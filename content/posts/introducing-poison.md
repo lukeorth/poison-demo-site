@@ -19,11 +19,11 @@ All the static assets for the site (JS files, CSS, and fonts) are located within
 
 In addition to the standard Built-in templates and shortcodes that come with Hugo, *Poison* offers some unique features of its own.
 
-### Light & Dark Mode
+### Light & dark mode
 
 Give readers the choice to read in light or dark mode.  The user's preference is remembered and saved in local storage.  Light mode is the default for first time visitors, but you can change this in your config file.
 
-### Table of Contents
+### Table of contents
 
 Provide a floating table of contents for readers with large enough screens (i.e. *screen-width > 1600 pixels*).
 
@@ -100,7 +100,7 @@ For reference, the configuration above would add the following code to each page
 <script defer data-domain="myblog.com" src="https://plausible.myblog.com/js/script.js"></script>
 {{</highlight >}}
 
-### Email Newsletters
+### Email newsletters
 
 Allow users to subscribe to your blog newsletters via email. 
 Poison currently supports [Listmonk](https://listmonk.app/) which is available via [self-hosting](https://github.com/knadh/listmonk).
@@ -274,7 +274,7 @@ For more information on how to get started with Hugo and themes, read the offici
 
 After successfully installing *Poison*, the last step is to configure it.
 
-### The Sidebar Menu
+### The sidebar menu
 
 Any items you want displayed in your sidebar menu *must* satisfy two requirements.  They must:
 
@@ -319,7 +319,7 @@ menu = [
     ]
 {{</highlight >}}
 
-### The Front Page
+### The front page
 When visiting the base url for the site, i.e. `your.domain.com/`, a paginated feed of your recently added content is displayed in reverse chronological order. By default, only content in the "posts" [page bundle](https://gohugo.io/content-management/page-bundles/) is displayed. You can configure a list of page bundle names to be included on this page by adding the `front_page_content` parameter to your config.toml file.
 
 {{< highlight toml >}}
@@ -327,7 +327,7 @@ When visiting the base url for the site, i.e. `your.domain.com/`, a paginated fe
   front_page_content = ["posts", "projects"]
 {{</highlight >}}
 
-### Example Config
+### Example config
 I recommend starting by copying/pasting the following code into your config.toml file.  Once you see how it looks, play with the settings as needed.
 
 **NOTE**: To display an image in your sidebar, you'll need to uncomment the `brand_image` path below and have it point to an image file in your project.  The path is relative to the `static` directory.  If you don't have an image, just leave this line commented out.
