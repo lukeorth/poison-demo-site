@@ -15,7 +15,8 @@
       <guid>https://poison.lukeorth.com/posts/introducing-poison/</guid>
       <description>&lt;p&gt;&lt;em&gt;Poison&lt;/em&gt; is a &lt;strong&gt;clean&lt;/strong&gt;, &lt;strong&gt;professional&lt;/strong&gt; Hugo theme designed to &lt;strong&gt;captivate&lt;/strong&gt; your readers.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s also &lt;strong&gt;tiny&lt;/strong&gt; and &lt;strong&gt;privacy conscious&lt;/strong&gt;.  No JavaScript frameworks, icon packs, or Google fonts.  No ads or trackers polluting your console window.  &lt;strong&gt;We kept things simple&lt;/strong&gt;.  A little vanilla JavaScript, a dash of CSS, and the power of Hugo.&lt;/p&gt;
-&lt;p&gt;All the static assets for the site (JS files, CSS, and fonts) are located within the theme&amp;rsquo;s &lt;em&gt;/assets/&lt;/em&gt; directory.  &lt;strong&gt;That way you know &lt;em&gt;exactly&lt;/em&gt; what&amp;rsquo;s going onto your site&lt;/strong&gt;.&lt;/p&gt;</description>
+&lt;p&gt;All the static assets for the site (JS files, CSS, and fonts) are located within the theme&amp;rsquo;s &lt;em&gt;/assets/&lt;/em&gt; directory.  &lt;strong&gt;That way you know &lt;em&gt;exactly&lt;/em&gt; what&amp;rsquo;s going onto your site&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Check out our demo site&amp;rsquo;s analytics &lt;a href=&#34;https://plausible.lukeorth.com/poison.lukeorth.com&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; to gauge community interest in the theme.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -13,6 +13,8 @@ It's also **tiny** and **privacy conscious**.  No JavaScript frameworks, icon pa
 
 All the static assets for the site (JS files, CSS, and fonts) are located within the theme's */assets/* directory.  **That way you know *exactly* what's going onto your site**.
 
+Check out our demo site's analytics [here](https://plausible.lukeorth.com/poison.lukeorth.com) to gauge community interest in the theme.
+
 <!--more-->
 
 ## Features
@@ -79,9 +81,11 @@ Once everything is set up, you can activate it in the *Poison* theme by includin
 
 ### Analytics
 
-Gain insights on who your users are.  Poison currently supports [Plausible](https://plausible.io) which is available via a paid service or by [self-hosting](https://github.com/plausible/analytics).
+Gain insights on your users.  Poison currently supports [Plausible](https://plausible.io) which is available via a paid service or by [self-hosting](https://github.com/plausible/analytics).
 
 **Note**: *Enabling analytics will add external dependencies.*
+
+**Check out our demo site's Plausible analytics [here](https://plausible.lukeorth.com/poison.lukeorth.com)!**
 
 Once you've established your Plausible instance, you can activate it by adding three lines to your ``config.toml`` file.
 
