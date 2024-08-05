@@ -244,10 +244,26 @@ b -> c
 Here's the code for the diagram above:
 
 {{< highlight text >}}
-{{< plantuml id="foo" >}}
+{{</* plantuml id="foo" */>}}
 a -> b
 b -> c
-{{< /plantuml >}}
+{{</* /plantuml */>}}
+{{</ highlight >}}
+
+### Details
+
+There's a shortcode for encoding detail dropdowns into your pages.
+
+{{< details summary="A detail dropdown" >}}
+Markdown content
+{{< /details >}}
+
+Here's the code for the detail dropdown above:
+
+{{< highlight text >}}
+{{</* details summary="A detail dropdown" */>}}
+Markdown content
+{{</* /details */>}}
 {{</ highlight >}}
 
 ## Installation

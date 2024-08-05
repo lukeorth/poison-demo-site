@@ -21,7 +21,7 @@ pluralizelisttitles = false
 
     github_url = "https://github.com"
     linkedin_url = "https://linkedin.com"
-    twitter_url = "https://twitter.com"
+    x_url = "https://x.com"
     discord_url = "https://discord.com"
     youtube_url = "https://youtube.com"
     email_url = "mailto://user@domain"
